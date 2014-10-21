@@ -91,3 +91,9 @@ AclComponent ``$settings['habtm']``, and have it loaded before any Auth configur
         )
     );
 ```
+
+_[Issues]_
+
+It should be possible to set custom User-model/Group-model using settings outside the plugin directory which work for
+Console commands such as `Console/cake acl check aro aco`.
+

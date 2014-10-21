@@ -11,9 +11,10 @@ App::uses('DbAcl', 'Controller/Component/Acl');
 class HabtmDbAcl extends DbAcl {
 
 	public $settings = array(
-		'userModel' => 'User',
-		'groupAlias' => 'Group',
+		'userModel' => 'Ccuser',
+		'groupAlias' => 'UserType',
 	);
+  // TODO: these settings should be set-able using configs outside the plugin, and working for Console commands such as check
 
 /**
  * Initializes the containing component and sets the Aro/Aco objects to it.
